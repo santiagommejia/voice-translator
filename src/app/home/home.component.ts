@@ -45,14 +45,12 @@ export class HomeComponent implements OnInit, AfterViewInit {
       threshold: 0,
       gestureName: 'long-press',
       onStart: ev => {
-        console.log('long-press start');
         Haptics.impact({ style: ImpactStyle.Light })
         this.duration.seconds = 0;
         this.duration.interval = setInterval(() => this.duration.seconds++, 1000);
         this.startRecording();
       },
       onEnd: ev => {
-        console.log('long-press end');
         this.isRecordingAudio = false;
         setTimeout(() => {
           this.stopRecording();
