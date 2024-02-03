@@ -23,6 +23,9 @@ log.txt
 /platforms
 /plugins
 
+# Credentials
+/src/environments/environments
+
 # Compiled output
 /dist
 /tmp
