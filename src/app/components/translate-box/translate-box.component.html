@@ -1,0 +1,19 @@
+<ion-grid>
+    <ion-row>
+        <ion-col size="2" class="center-content">
+            <div class="flag-container" [class]="getFlagIconClass(language)"></div>
+        </ion-col>
+        <ion-col size="10">
+            <ion-select [(ngModel)]="language" (ionChange)="onLanguageChange()">
+                <ion-select-option 
+                    *ngFor="let language of availableLanguages" 
+                    [value]="language">
+                    {{ getCountry(language) }}
+                </ion-select-option>
+            </ion-select>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-text class="center-text-content text-box" [style.font-size]="fontSize">{{text}}</ion-text>
+    </ion-row>
+</ion-grid>

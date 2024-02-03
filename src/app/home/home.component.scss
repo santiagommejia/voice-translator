@@ -1,0 +1,48 @@
+ion-content {
+	--padding-top: 36px;
+}
+
+.record-button-row {
+    margin-top: -50px;
+    width: 100%;
+}
+
+.mic {
+    border: 2px solid grey;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.secondary-button {
+    border: 2px solid grey;
+    background-color: white;
+    color: black;
+    z-index: 1;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+app-translate-box {
+    width: 100%;
+}
+
+.pulsate {
+    animation: pulsate 1.5s ease-in-out infinite;
+    color: red;
+  }
+  
+  @keyframes pulsate {
+    0%, 100% {
+      transform: scale(0.9);
+      opacity: 0.6;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+  

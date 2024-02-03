@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  openAikey: 'your-openai-key-here',
+  googleTranslateApiKey: 'your-google-translate-key-here'
 };

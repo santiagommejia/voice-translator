@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  
+  constructor() {
+    this.initDummyLanguages();
+  }
+
+  initDummyLanguages() {
+    const quickAccessLanguages = ['es-419', 'en-US', 'de-DE', 'it-IT', 'pt-BR', 'fr-FR'];
+    sessionStorage.setItem('quickAccessLanguages', JSON.stringify(quickAccessLanguages))
+  }
+
+
 }

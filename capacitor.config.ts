@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'translator.openai.starter',
   appName: 'Translator',
   webDir: 'www',
   server: {

@@ -1,7 +1,11 @@
 {
+  "appId": "translator.openai.starter",
   "name": "Translator",
   "integrations": {
     "capacitor": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "app": {
+    "icon": "resources/app.svg"
+  }
 }
