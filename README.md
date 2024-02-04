@@ -1,3 +1,4 @@
+
 # Voice Translator
 
 This project does voice translation from one language to another.
@@ -16,3 +17,18 @@ Other dependencies:
 # Dev Instructions
 
 Replace the `openAikey` and the `googleTranslateApiKey` with your own keys in the `environment.ts` and `environment.prod.ts` files.
+
+# How to run
+
+Web
+
+Run `npm install` and `npm run start` to see it on the web, keep in mind the [capacitor's speech recognition plugin](https://www.npmjs.com/package/@capacitor-community/speech-recognition) won't work in the web so you wont be able to actually record voice.
+
+iOS
+
+Run `ionic build`, `npx cap sync ios`, `npx cap open ios` and run it in your phone from Xcode.
+
+Android
+
+Run `ionic build`, `npx cap sync android`, `npx cap open android` and run it in your phone from Android Studio.
+
