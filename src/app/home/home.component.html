@@ -1,10 +1,22 @@
 <ion-content class="ion-padding">
   <ion-grid>
     <ion-row>
-      <app-translate-box [language]="origin.language" (languageChange)="languageChangeEvent($event)" [excludeLanguage]="destination.language" [text]="origin.text" [boxId]="UPPER_BOX"></app-translate-box>
+      <app-translate-box 
+				[boxId]="UPPER_BOX"
+				[language]="origin.language" 
+				[excludeLanguage]="destination.language" 
+				[text]="origin.text"
+				(languageChange)="languageChangeEvent($event)" 
+			></app-translate-box>
     </ion-row>
     <ion-row>
-      <app-translate-box [language]="destination.language" (languageChange)="languageChangeEvent($event)" [excludeLanguage]="origin.language" [text]="destination.text" [boxId]="BOTTOM_BOX"></app-translate-box>
+      <app-translate-box 
+				[boxId]="BOTTOM_BOX"
+				[language]="destination.language" 
+				[excludeLanguage]="origin.language" 
+				[text]="destination.text" 
+				(languageChange)="languageChangeEvent($event)" 
+			></app-translate-box>
     </ion-row>
     <ion-row class="center-content record-button-row">
       <ion-col size="3" class="center-content">
@@ -13,7 +25,7 @@
         </div>
       </ion-col>
       <ion-col size="6" class="center-content">
-        <div class="mic center-content" #recordButton>
+        <div class="mic center-content" (click)="recordBtnClicked()">
           <ion-icon name="mic" size="large" [class.pulsate]="isRecordingAudio"></ion-icon>
         </div>
       </ion-col>
